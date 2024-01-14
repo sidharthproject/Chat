@@ -3,7 +3,7 @@ import { auth } from "../firebase";
 
 
 
-console.log(auth.currentUser);
+
 const initialState  ={
     user:{},
     chatId: 'null'
@@ -19,7 +19,8 @@ const chatSlice = createSlice({
             state.user = action.payload.user
         },
         clearChat:(state)=>{
-          state.user = null
+         state.user=null
+         state.chatId =null
         }
        
   

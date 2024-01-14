@@ -6,11 +6,14 @@ import { cleardata } from '../store/authSlice';
 
 
 
+
 function Navbar() {
   const selector = useSelector((state)=>state.auth.currentUser)
+
   console.log(selector.photoURL);
   const dispatch = useDispatch()
   const handleClick =()=>{
+    navigate
      dispatch(cleardata())
   }
 
