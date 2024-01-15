@@ -23,7 +23,7 @@ function Message({message}) {
            <span>just now</span>
         </div>
         <div className='max-w-[80%]  flex flex-col gap-[10px]'>
-            <p className={`bg-white py-[10px] px-[20px] flex items-center max-w-[max-content] justify-center h-[35px] rounded-es-xl rounded-se-xl rounded-ee-xl ${message.senderId === selector.uid && "bg-purple-500 text-white"}`}>{message.text}</p>
+            <p className={`bg-white py-[10px] px-[20px] flex items-center max-w-[max-content] justify-center h-[35px] rounded-es-xl rounded-se-xl rounded-ee-xl ${message.senderId === selector.uid && "border-2 border-solid border-[#643ba7] text-[#5b2266] rounded-tl-xl rounded-bl-xl rounded-br-xl rounded-tr-none "}`}>{message.text}</p>
            {message.img && <img className='h-[100px] ' src={message.img} alt="" />}
         </div>
     </div>

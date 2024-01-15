@@ -3,7 +3,7 @@ import { FaVideo } from "react-icons/fa";
 import { TiUserAdd } from "react-icons/ti";
 import { TfiMoreAlt } from "react-icons/tfi";
 import Messeges from './Messeges';
-import Input from './input';
+import Enter from './Enter';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import auth from '../store/store'
@@ -30,7 +30,7 @@ function Chat() {
             </div>           
         </div>
         <Messeges/>
-        <Input/>
+        <Enter/>
     </div>
 }
   
