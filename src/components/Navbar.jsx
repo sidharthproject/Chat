@@ -13,7 +13,7 @@ function Navbar() {
   console.log(selector.photoURL);
   const dispatch = useDispatch()
   const handleClick =()=>{
-    navigate
+   
      dispatch(cleardata())
   }
 
